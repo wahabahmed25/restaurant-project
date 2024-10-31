@@ -24,6 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
+
     // Contact page button
     if (contactButton) {
         contactButton.addEventListener('click', () => {

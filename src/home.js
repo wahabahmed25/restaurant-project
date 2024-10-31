@@ -1,3 +1,5 @@
+import loadMenu from "./menu";
+
 // loadHome.js
 export default function loadHome() {
     const home = document.createElement('div');
@@ -17,7 +19,8 @@ export default function loadHome() {
     orderButton.textContent = "Order Now";
     orderButton.classList.add('order-button');
     orderButton.addEventListener('click', () => {
-        alert("Order page coming soon!");
+        home.textContent = ''
+        content.appendChild(loadMenu());
     });
     home.appendChild(orderButton);
 
